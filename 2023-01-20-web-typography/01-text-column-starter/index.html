@@ -24,6 +24,12 @@
       padding: 1rem;
     }
 
+    /* Notice the importance of source order when declarations conflict */
+    /* Move this declaration above the first `h1` block above. Inspect the <h1> in the browser. What do you notice in the inspector? */
+    h1 {
+      color: yellow;
+    }
+
   </style>
 </head>
 <body>
