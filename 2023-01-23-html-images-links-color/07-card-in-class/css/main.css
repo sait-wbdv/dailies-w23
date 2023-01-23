@@ -1,0 +1,38 @@
+/* Body text */
+body {
+ font-family: sans-serif;
+ font-size: 22px;
+ line-height: 1.5;
+}
+
+
+/* Call to Action "button" */
+a, a:visited {
+  text-decoration: none;
+  margin: auto;
+  display: block;
+  max-width: 40ch;
+  
+  border-radius: 1rem;
+  background-color: darkred;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Hover state */
+a:hover {
+  background-color: darkkhaki;
+  text-decoration: underline;
+}
+
+/* Click state */
+a:active {
+  
+}
+
+/* Call-to-action container */
+.cta {
+  padding: 1rem;
+
+}
