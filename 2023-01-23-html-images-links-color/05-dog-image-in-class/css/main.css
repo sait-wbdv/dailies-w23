@@ -1,0 +1,45 @@
+  /* Text Font */
+body {
+  font-family: 'Fauna One', Tahoma, Geneva, sans-serif;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+main {
+  max-width: 85ch;
+  margin: auto;
+}
+
+/* Display Font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel Decorative', Palatino Linotype, Book Antiqua, Palatino, serif;
+  font-variant: small-caps;
+  letter-spacing: 7px;
+
+}
+
+/* Practice your selectors here */
+/* Change h1 to make other elements on this page purple */
+h1 {
+  color: white;
+  background-color: rebeccapurple;
+  padding: 1rem;
+}
+
+/* Notice the importance of source order when declarations conflict */
+/* Move this declaration above the first `h1` block above. Inspect the <h1> in the browser. What do you notice in the inspector? */
+h1 {
+  color: yellow;
+}
+
+.special {
+  padding: 1rem;
+  width: 250px;
+}
+
+img {
+  width: 100%;
+  height: initial;
+  border: 5px solid black;
+  border-radius: 15px;
+}
