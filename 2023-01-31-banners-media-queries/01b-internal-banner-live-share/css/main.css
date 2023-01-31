@@ -1,9 +1,28 @@
+header{
+  display: flex;
+  /* Will only work if there's no flex: auto on its items */
+  justify-content: space-between;
+  border: 1px solid blue;
+}
+
+/* flex: auto will make the <a> and <nav> grow to fill empty space */
+/* which will create extra space inside the <ul> */
+header > * { 
+  /* flex: auto; */
+}
+
 nav ul {
   display: flex;
-  justify-content: flex-end;
-
+  /* Will only work if there's extra space given by the header */
+  /* justify-content: space-evenly; */
   list-style: none;
   padding-left: 0;
+  margin: 0;
+}
+
+nav li {
+  /* Will only work if there's extra space given by the header */
+  /* flex: auto; */
 }
 
 a {
