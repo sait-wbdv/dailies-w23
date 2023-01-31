@@ -5,6 +5,10 @@ body {
 }
 
 nav ul {
+  display: flex;
+  justify-content: flex-end;
+  /* flex-direction: row-reverse; */
+
   list-style: none;
   padding-left: 0;
   margin: 0;
