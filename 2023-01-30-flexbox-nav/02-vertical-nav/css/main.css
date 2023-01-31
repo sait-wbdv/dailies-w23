@@ -7,6 +7,7 @@ body {
 nav ul {
   display: flex;
   justify-content: space-evenly;
+  /* flex-direction: row-reverse; */
 
   list-style: none;
   padding-left: 0;
@@ -46,4 +47,15 @@ main {
 
 header, footer {
   text-align: center;
+}
+
+.intro {
+  margin-bottom: 5rem;
+}
+.byline {
+  margin-bottom: 0;
+}
+
+main > p:nth-child(2) {
+  margin: 0;
 }
