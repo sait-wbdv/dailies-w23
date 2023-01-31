@@ -1,0 +1,21 @@
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-align: center;
+  color: darkslategrey;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+  border: 1px solid grey;
+}
+
+a:hover {
+  background-color: darkslategrey;
+  color: white;
+}
