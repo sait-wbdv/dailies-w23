@@ -4,10 +4,24 @@ body {
 }
 
 header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  min-height: 100vh;
+
+  background-image: url('https://picsum.photos/1500/1500');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+  
+
 
 } 
 
 p {
   font-family: 'Nabla', Arial, Helvetica, cursive;
   font-size: clamp(64px, 10vw, 128px);
+  margin: 0;
+  padding-right: 0.7em;
+  /* text-align: center; */
 }
