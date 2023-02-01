@@ -1,0 +1,39 @@
+/* Text Font */
+body {
+  color: hsl(60, 30%, 30%);
+  background-color: hsl(60, 50%, 90%);
+  font-family: sans-serif;
+}
+
+main {
+  max-width: 650px;
+  margin: auto;
+}
+
+/* Display Font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: serif;
+}
+
+/* Practice your selectors here */
+/* Change h1 to make other elements on this page purple */
+h1 {
+  color: white;
+  background-color: hsl(270, 50%, 40%);
+  padding: 1rem;
+}
+
+/* Notice the importance of source order when declarations conflict */
+/* Move this declaration above the first `h1` block above. Inspect the <h1> in the browser. What do you notice in the inspector? */
+h1 {
+  color: hsl(60, 100%, 50%);
+}
+
+a {
+  color: hsl(8, 63%, 30%);
+  font-weight: bold;
+}
+
+svg {
+  margin-right: 0.5em;
+}
