@@ -10,6 +10,7 @@ body {
   margin: 0;
 
   background-color: #f9f9ec;
+  
 }
 
 h1 {
@@ -68,6 +69,31 @@ footer p {
 }
 
 @media screen and (min-width: 800px) {
+  /* Page Layout */
+
+  body {
+    display: grid;
+    grid-template-columns: 1fr 15em;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  }
+
+  header {
+    grid-column: span 2;
+  }
+
+  aside {
+    grid-row: span 2;
+    padding: 1em;
+  }
+
+  main {
+    padding: 1em;
+  }
+
+
+
+  /* Image Gallery */
   section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
