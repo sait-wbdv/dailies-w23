@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 1.7;
+
+  background-color: #f9f9ec;
+}
+
+h1, h2, h3 {
+  font-family: 'Carter One', Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+section {
+  margin: auto;
+}
+
+article {
+  width: 100%;
+  margin: 1rem;
+
+  background-color: #ccc;
+  border-radius: 1rem;
+  border: 1px solid #aaa;
+  box-shadow: 0 1px 1px #0000000d,
+              0 2px 2px #0000000d,
+              0 4px 4px #0000000d,
+              0 8px 8px #0000000d;
+}
+
+article h3 {
+  margin: 0.5rem;
+  text-align: center;
+}
+
+article img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  section {
+    display: grid;
+    grid-template-columns: minmax(150px, 500px) 500px 500px;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+
+    max-width: 1500px;
+  }
+
+  article {
+    margin: 0;
+  }
+}
