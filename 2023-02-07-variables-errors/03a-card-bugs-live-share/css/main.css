@@ -1,0 +1,82 @@
+body {
+  /* body text font styles with system and generic fallbacks*/
+  font-family: 'Open Sans', Lucida Sans Unicode, Lucida Grande sans-serif;
+
+  /* Define larger body text and line height */
+  /* Fallback if clamp() isn't supported */
+  font-size: 18px;
+  /* Smaller font-size on mobile */
+  font-size: clamp(16px, 3vw, 20px);
+  line-height: 1.5;
+}
+
+h3 {
+  /* Display text font with system and generic fallbacks */
+  font-family: 'Bebas Neue', Impact, Charcoal, cursive;
+  font-size: 2rem;
+  text-align: center;
+
+  /* Spacing content */
+  margin: 0;
+  padding: 0.5rem 1rem;
+
+  /* Adding some grayscale colours */
+  background-color: #aaa;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+a.card {
+  /* Shrink wrap link to its content */
+  display: block;
+  width: fit-content;
+
+  /* Centre card on page */
+  margin: auto;
+}
+
+a, a:visited {
+  /* change link color back to black */
+  color: black;
+  text-decoration: none;
+}
+
+/* Hover effects */
+a:hover h3 {
+  color: #ddd;
+  background-color: rebeccapurple;
+}
+
+a:hover figcaption {
+  background-color: papayawhip;
+}
+
+figure {
+  /* Readable line length */
+  max-width: 35ch;
+  margin: 0;
+
+  /* Make card obviously clickable */
+  border: 1px solid darkgrey;
+  box-shadow: 
+    0 1px 1px rgb(0, 0, 0, .2),
+    0 2px 2px rgb(0, 0, 0, .2),
+    0 4px 4px rgb(0, 0, 0, .2),
+    0 8px 8px rgb(0, 0, 0, .2);
+  border-radius: 1rem;
+}
+
+figure img {
+  /* Make image behave "normally" */
+  display: block;
+  width: 100%;
+  height: initial;
+}
+
+figcaption {
+  margin: 0;
+  padding: 1rem;
+
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
