@@ -5,7 +5,7 @@ let lunch = "Spaghetti";
 console.log(lunch);
 
 // Numbers
-let age = 47;
+let ag = 47;
 console.log(age);
 
 age = 48;
