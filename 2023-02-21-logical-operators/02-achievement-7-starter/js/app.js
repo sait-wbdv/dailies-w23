@@ -23,7 +23,7 @@ if (mood === 'hungry') {
   console.log('Pass the potato chips!');
 }
 
-// Example: Logical NOT (!) Operator
+// Example 3: Logical NOT (!) Operator
 // Using a logical NOT operator (!), refactor the condition of the following if statement so that the statement is logged to the console correctly.
 
 const cloudy = true;
