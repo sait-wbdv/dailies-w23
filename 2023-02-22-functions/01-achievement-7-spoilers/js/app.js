@@ -4,10 +4,8 @@
 const timeOfDay = 'afternoon';
 const sleepy = true;
 
-if (timeOfDay === 'afternoon') {
-  if (sleepy) {
-    console.log('Time to have my afternoon nap!');
-  }
+if (timeOfDay === 'afternoon' && sleepy) {
+  console.log('Time to have my afternoon nap!');
 }
 
 // Example 2: OR (||) Operator
@@ -15,11 +13,7 @@ if (timeOfDay === 'afternoon') {
 
 const mood = 'happy';
 
-if (mood === 'stressed') {
-  console.log('Pass the potato chips!');
-}
-
-if (mood === 'hungry') {
+if (mood === 'stressed' || mood === 'hungry') {
   console.log('Pass the potato chips!');
 }
 
@@ -28,6 +22,6 @@ if (mood === 'hungry') {
 
 const cloudy = true;
 
-if (cloudy) {
+if (!cloudy) {
   console.log('Put on sun glasses.');
 }
