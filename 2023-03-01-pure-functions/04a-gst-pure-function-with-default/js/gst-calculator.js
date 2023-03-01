@@ -4,11 +4,11 @@ const calculateGST = function(subTotal, taxRate) {
 
   // Use of `gstRate` makes this an impure function because
   // it's not passed as an
-  const gst = subTotal * taxRate;
-  const total = subTotal + gst;
+  const tax = subTotal * taxRate;
+  const total = subTotal + tax;
 
   // console.log(`$${subTotal} plus ${gstRate * 100}% GST is $${total.toFixed(2)}.`);
-  return `$${subTotal} plus ${gstRate * 100}% GST is $${total.toFixed(2)}.`;
+  return `$${subTotal} plus ${taxRate * 100}% GST is $${total.toFixed(2)}.`;
 }
 
 // Sub Total 1
