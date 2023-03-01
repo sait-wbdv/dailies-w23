@@ -1,30 +1,24 @@
-const gstRate = 0.05
+const hstRate = 0.13;
 
-const calculateGST = function(subTotal, taxRate) {
+const calculateTax = function(subTotal, taxRate = 0.05) {
 
-  // Use of `gstRate` makes this an impure function because
-  // it's not passed as an
+  // taxRate now has a default, which cleans up our code
   const tax = subTotal * taxRate;
   const total = subTotal + tax;
 
   // console.log(`$${subTotal} plus ${gstRate * 100}% GST is $${total.toFixed(2)}.`);
-  return `$${subTotal} plus ${taxRate * 100}% GST is $${total.toFixed(2)}.`;
+  return `$${subTotal} plus ${taxRate * 100}% tax is $${total.toFixed(2)}.`;
 }
 
 // Sub Total 1
 const subTotal1 = 40;
-const paymentSummary1 = calculateGST(subTotal1, gstRate);
+const paymentSummaryAB = calculateTax(subTotal1);
 
-console.log(paymentSummary1);
+console.log(paymentSummaryAB);
 
 // Sub Total 2
 const subTotal2 = 55;
-const paymentSummary2 = calculateGST(subTotal2, gstRate);
+const paymentSummaryBC = calculateTax(subTotal2, hstRate);
 
-console.log(paymentSummary2);
+console.log(paymentSummaryBC);
 
-// Sub Total 3
-const subTotal3 = 32.45;
-const paymentSummary3 = calculateGST(subTotal3, gstRate);
-
-console.log(paymentSummary3);

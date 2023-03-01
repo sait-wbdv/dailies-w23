@@ -1,9 +1,8 @@
 const gstRate = 0.05
 
-const calculateGST = function(subTotal, taxRate) {
+const calculateTax = function(subTotal, taxRate) {
 
-  // Use of `gstRate` makes this an impure function because
-  // it's not passed as an
+  // taxRate is passed as an argument, making this a pure function
   const tax = subTotal * taxRate;
   const total = subTotal + tax;
 
@@ -13,18 +12,18 @@ const calculateGST = function(subTotal, taxRate) {
 
 // Sub Total 1
 const subTotal1 = 40;
-const paymentSummary1 = calculateGST(subTotal1, gstRate);
+const paymentSummary1 = calculateTax(subTotal1, gstRate);
 
 console.log(paymentSummary1);
 
 // Sub Total 2
 const subTotal2 = 55;
-const paymentSummary2 = calculateGST(subTotal2, gstRate);
+const paymentSummary2 = calculateTax(subTotal2, gstRate);
 
 console.log(paymentSummary2);
 
 // Sub Total 3
 const subTotal3 = 32.45;
-const paymentSummary3 = calculateGST(subTotal3, gstRate);
+const paymentSummary3 = calculateTax(subTotal3, gstRate);
 
 console.log(paymentSummary3);
