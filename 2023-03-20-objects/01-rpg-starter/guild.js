@@ -7,6 +7,7 @@ const player1Name = 'Ryan Reynolds';
 const player1Race = 'human';
 const player1Class = 'rogue';
 let player1Level = 1;
+let player1Health = 8;
 
 // Player 1 stats
 let player1Strength = 7;
@@ -35,6 +36,7 @@ const player2Name = 'Gyda';
 const player2Race = 'dwarf';
 const player2Class = 'fighter';
 let player2Level = 1;
+let player2Health = 12;
 
 // Player 2 stats
 let player2Strength = 11;
@@ -63,6 +65,7 @@ const player3Name = 'Anna';
 const player3Race = 'elf';
 const player3Class = 'wizard';
 let player3Level = 1;
+let player3Health = 9;
 
 // Player 3 stats
 let player3Strength = 8;
