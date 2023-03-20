@@ -18,7 +18,7 @@ let player1Wisdom = 9;
 let player1Charisma = 11;
 
 // Player 1 effects
-let Player1Poisoned = true;
+let player1Poisoned = true;
 
 // Player 1 items
 let player1Backpack = [
